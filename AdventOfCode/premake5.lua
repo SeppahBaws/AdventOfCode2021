@@ -1,4 +1,4 @@
-project "Puzzles"
+project "AdventOfCode"
     kind "ConsoleApp"
     language "C++"
     cppdialect "C++20"
@@ -7,15 +7,19 @@ project "Puzzles"
 
     targetdir ("%{wks.location}/bin/" .. outputdir .. "/%{prj.name}")
     objdir ("%{wks.location}/bin-int/" .. outputdir .. "/%{prj.name}")
+    
+    pchheader "pch.h"
+    pchsource "src/pch.cpp"
 
     files
     {
         "src/**.h",
-        "src/**.cpp"
+        "src/**.cpp",
     }
 
     includedirs
     {
+        "src",
         "%{IncludeDir.fmt}"
     }
 

@@ -23,5 +23,5 @@ group "Dependencies"
     include "Dependencies/fmt"
 group ""
 
-include "Puzzles"
+include "AdventOfCode"
 

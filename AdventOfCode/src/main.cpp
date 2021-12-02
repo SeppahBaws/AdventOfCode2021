@@ -1,5 +1,5 @@
 #include "pch.h"
-#include "Puzzles/Day1/Day1.h"
+#include "Puzzles/Day01/Day1.h"
 
 int main()
 {

@@ -13,7 +13,7 @@ namespace Day1
 
 
 		std::vector<std::string> lines{};
-		Common::ReadFileSync("src/Puzzles/Day1/input.txt", lines);
+		Common::ReadFileSync("src/Puzzles/Day01/input.txt", lines);
 
 		// Convert strings to ints
 		const auto numView = lines | std::ranges::views::transform([](auto&& str) { return std::stoi(str); });
